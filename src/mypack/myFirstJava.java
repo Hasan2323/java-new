@@ -10,6 +10,8 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+//import static sun.util.calendar.ZoneInfoFile.ZoneOffsetTransitionRule.isLeapYear;
+
 public class myFirstJava {
 
 
@@ -259,8 +261,8 @@ public class myFirstJava {
 //
 //        prln(c);
 
-
-
+        GregorianCalendar cal = new GregorianCalendar();
+        prln(cal.isLeapYear(2019));
 
 
     } //end of main()

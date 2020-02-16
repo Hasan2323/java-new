@@ -43,11 +43,11 @@ public class SendEmail
             message.setText("Hi, this is example of sending email. lorum ipsum lorem ipsum lorem ipsum lorem ipsum" +
                     "THis is the second line of code" +
                     "and this is the third line of code. " +
-                    "Thank you very much for your concern!");
+                    "Thank you for your concern!");
 
             // Send message
             Transport.send(message);
-            System.out.println("message sent successfully....");
+            System.out.println("message sent to "+to+" successfully....");
 
         }catch (MessagingException mex) {mex.printStackTrace();}
     }
