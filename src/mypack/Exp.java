@@ -1,0 +1,23 @@
+package mypack;
+
+import static mypack.myFirstJava.prln;
+
+public class Exp {
+
+    public static void main(String[] args){
+
+        byte b = 42;
+        char c = 'a';
+        short s = 1024;
+        int i = 50000;
+        float f = 5.67f;
+        double d = .1234;
+
+        double result = (f * b) + (i / c) - (d * s);
+
+        prln((f * b) +" + "+(i / c)+" - "+(d * s));
+
+        prln("result = "+result);
+    }
+
+}

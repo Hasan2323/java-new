@@ -11,10 +11,10 @@ public class SendEmail
 
         final String username = "emarketplace2@gmail.com";
         final String password = "sanisifat";
-        String name = "Ashik";
+        String name = "Towfiq";
 
         String to   = "saimon.ctg@gmail.com";
-        String from = "emarketplace2@gmail.com";
+        //String from = "emarketplace2@gmail.com";
         //String host = "localhost";
 
         //Get the session object
@@ -37,7 +37,7 @@ public class SendEmail
         //compose the message
         try{
             MimeMessage message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(from));
+            message.setFrom(new InternetAddress(username));
             message.addRecipient(Message.RecipientType.TO,new InternetAddress(to));
             message.setSubject("Welcome "+name);
             message.setText("Hi, this is example of sending email. lorum ipsum lorem ipsum lorem ipsum lorem ipsum" +
